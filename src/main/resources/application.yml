@@ -17,7 +17,7 @@ security:
   login-url: /oauth/token
   jwt:
     client-id: testjwtclientid
-    client-secret: "{bcrypt}$2a$04$nVTw7YUhQalKaUJNsCBu6emvRPxyCdl7NAMVIeV6qFhbn/.exdv12"
+    client-secret: "{bcrypt}$2a$04$8TqKBZptUcfLVOB5yTNNP.2asbSLv8ET5tUuFMZJlivu472en2C3G"
     grant-type: password
     scope-read: read
     scope-write: write
