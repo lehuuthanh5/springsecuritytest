@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/spring?autoReconnect=true&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+security:
+  oauth2:
+    resource:
+      filter-order: 3
+  signing-key: MaYzkSjmkzPC57L
+  encoding-strength: 4
+  security-realm: Spring Boot JWT Example Realm
+  login-url: /oauth/token
+  jwt:
+    client-id: testjwtclientid
+    client-secret: "{bcrypt}$2a$04$nVTw7YUhQalKaUJNsCBu6emvRPxyCdl7NAMVIeV6qFhbn/.exdv12"
+    grant-type: password
+    scope-read: read
+    scope-write: write
+    resource-ids: testjwtresourceid
